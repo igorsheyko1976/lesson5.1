@@ -43,10 +43,14 @@ store3.add_item("Ноутбук", 30000)
 store3.add_item("Смартфон", 20000)
 store3.add_item("Наушники", 5000)
 
-# Тестирование методов
 print("\nТестирование магазина 'Магазин фруктов':")
-print("Цена на яблоки:", store1.get_price("Яблоки"))
+
+print("Цена на Яблоки:", store1.get_price("Яблоки"))
 store1.update_price("Яблоки", 110)
 print("Цена на яблоки после обновления:", store1.get_price("Яблоки"))
 store1.remove_item("Бананы")
 store1.remove_item("Киви")
+store1.add_item("Груши", 150)
+print("В ассортимет добавлены Груши по цене:", store1.get_price("Груши"))
+
+
